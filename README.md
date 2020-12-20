@@ -5,11 +5,12 @@ Abstraction service between two different email service providers.
 # Project Setup
 
 - Clone the projects
-- Add `.env` file
+- Add `.env` file. Please refer Env Variable section over [here](https://github.com/NerdyLuffy/Tech-Challenge/tree/Dev#environment-variables)
 - run the following command in your terminal
-  ```
-  npm install &&  npm run start
-  ```
+
+```
+npm install &&  npm run start
+```
 
 # Test
 
