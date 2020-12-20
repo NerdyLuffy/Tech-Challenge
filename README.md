@@ -39,3 +39,18 @@ npm run test-coverage
 | MAILGUM_APIKEY    | MailGun API Key                                 |
 | SENDGRID_ENDPOINT | SendGrid API Endpoint                           |
 | SENDGRID_APIKEY   | SendGrid API Key                                |
+
+# Notes/TODO
+
+- Add more code coverage :see_no_evil: as present repo is only for demonstration purpose.
+- As of now the API will always consider `MailGun` as primary provider, update the function to check with external services, config or Database to update the priority on the :airplane:.
+- Integration with the Splunk or log management tool :notebook_with_decorative_cover:.
+- User input validation :thinking:.
+
+# How to add Additional Providers
+
+- Create a `client` file for each new provider.
+- Update `emailClient` file to add the new provider.
+- Update the logic loop based on the requirement.
+- Most importantly, don't forget to add in test cases to make sure new provider and existing things are still functional.
+- Push the code in new branch and create the PR.
