@@ -4,9 +4,9 @@ Abstraction service between two different email service providers.
 
 # Project Setup
 
-- [x] Clone the projects
-- [x] Add `.env` file
-- [x] run the following command in your terminal
+- Clone the projects
+- Add `.env` file
+- run the following command in your terminal
   ```
   npm install &&  npm run start
   ```
