@@ -4,7 +4,9 @@ Abstraction service between two different email service providers.
 
 # Demo
 
-The API is deployed over `http://128.199.171.154/` and to send the email you can do
+The API is deployed over `http://128.199.171.154/`. If you like to user postman you can do [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/97568c707d1eee297368)
+
+`OR`
 
 ```
 curl --location --request POST 'http://128.199.171.154/' \
