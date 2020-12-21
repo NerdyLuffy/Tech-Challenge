@@ -2,6 +2,41 @@
 
 Abstraction service between two different email service providers.
 
+# Demo
+
+The API is deployed over `http://128.199.171.154/` and to send the email you can do
+
+```
+curl --location --request POST 'http://128.199.171.154/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "to": [
+        {
+            "name": "yash",
+            "email": "yashkaramchandani23@gmail.com"
+        }
+    ],
+    "cc": [
+        {
+            "name": "yash",
+            "email": "yashsk@yahoo.com"
+        }
+    ],
+    "bcc": [
+        {
+            "name": "yash",
+            "email": "yashsk@yahoo.com"
+        }
+    ],
+    "from": {
+        "name": "Nerdy Luffy",
+        "email": "yashsk@protonmail.com"
+    },
+    "subject": "Testing via API",
+    "body": "API is working"
+}'
+```
+
 # Project Setup
 
 - Clone the projects
@@ -46,6 +81,8 @@ npm run test-coverage
 - As of now the API will always consider `MailGun` as primary provider, update the function to check with external services, config or Database to update the priority on the :airplane:.
 - Integration with the Splunk or log management tool :notebook_with_decorative_cover:.
 - User input validation :thinking:.
+- Integration with CI/CD pipeline.
+- Adding the Dokcer :whale:
 
 # How to add Additional Providers
 
