@@ -82,7 +82,7 @@ npm run test-coverage
 - Integration with the Splunk or log management tool :notebook_with_decorative_cover:.
 - User input validation :thinking:.
 - Integration with CI/CD pipeline.
-- Adding the Dokcer :whale:
+- Adding the Dokcer build file :whale:.
 
 # How to add Additional Providers
 
