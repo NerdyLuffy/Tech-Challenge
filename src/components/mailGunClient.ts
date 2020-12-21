@@ -70,6 +70,7 @@ class MailGunClient {
     });
   }
 
+  //Function to perfrom the API Call
   private async doRequest(data: string) {
     if (this.endPoint && this.apikey) {
       try {
@@ -106,7 +107,6 @@ class MailGunClient {
               },
               400
             );
-
             break;
           case 401:
             this.clientResponse.setError(

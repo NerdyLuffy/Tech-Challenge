@@ -61,6 +61,7 @@ class SendGridClient {
     return await this.doRequest(data, headers);
   }
 
+  //Function to perfrom the API Call
   private async doRequest(data: string, headers: object) {
     if (this.endPoint) {
       try {
@@ -111,7 +112,7 @@ class SendGridClient {
           this.clientResponse.setError(
             {
               status: "error",
-              message: "Unable to delivery the email.",
+              message: "Unable to deliver the email.",
             },
             500
           );

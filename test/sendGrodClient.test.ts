@@ -56,7 +56,7 @@ describe("SendGridClient Test", () => {
       statusCode: 500,
       errorMessage: {
         status: "error",
-        message: "Unable to delivery the email.",
+        message: "Unable to deliver the email.",
       },
     },
   ];

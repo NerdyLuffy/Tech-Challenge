@@ -11,6 +11,7 @@ class EmailClient {
     protected clientResponse: ClientResponse = new ClientResponse()
   ) {}
 
+  //Abstraction layer between different email providers.
   public async sendEmail() {
     let mailGunResponse: any, sendGridResponse: any;
     try {
